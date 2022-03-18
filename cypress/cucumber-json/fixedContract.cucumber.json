@@ -1,0 +1,247 @@
+[
+  {
+    "description": "    As an individual client\n    I want to create a fixed contract",
+    "keyword": "Feature",
+    "name": "Create Fixed Contract",
+    "line": 1,
+    "id": "create-fixed-contract",
+    "tags": [],
+    "uri": "fixedContract.feature",
+    "elements": [
+      {
+        "id": "create-fixed-contract;check-login",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Check Login",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I login",
+            "result": {
+              "status": "passed",
+              "duration": 21355000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 328000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-fixed-contract;creating-a-fixed-contract",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Creating a fixed contract",
+        "tags": [
+          {
+            "name": "@E2E",
+            "line": 11
+          },
+          {
+            "name": "@Regression",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click on create a contract",
+            "result": {
+              "status": "passed",
+              "duration": 3280000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click on fixed contract",
+            "result": {
+              "status": "passed",
+              "duration": 1757000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I fill the general information on the create a contract page and continue",
+            "result": {
+              "status": "passed",
+              "duration": 12961000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I fill the payment rate page and continue",
+            "result": {
+              "status": "passed",
+              "duration": 14583000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I fill the define dates page and continue",
+            "result": {
+              "status": "passed",
+              "duration": 903000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I fill the benefits and extras page and continue",
+            "result": {
+              "status": "passed",
+              "duration": 1507000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I am redirected to the compliance page",
+            "result": {
+              "status": "passed",
+              "duration": 2198000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-fixed-contract;check-that-all-necessary-feilds-are-required-on-the-creating-fixed-contract-page",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Check that all necessary feilds are required on the creating fixed contract page",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I click on create a contract",
+            "result": {
+              "status": "passed",
+              "duration": 4602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I click on fixed contract",
+            "result": {
+              "status": "passed",
+              "duration": 2316000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I fill out the required feilds",
+            "result": {
+              "status": "passed",
+              "duration": 17023000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "The buttion should be enabled",
+            "result": {
+              "status": "passed",
+              "duration": 309000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-fixed-contract;check-that-i-can-continue-without-the-required-feilds",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Check that I can continue without the required feilds",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 28
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I click on create a contract",
+            "result": {
+              "status": "passed",
+              "duration": 2124000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I click on fixed contract",
+            "result": {
+              "status": "passed",
+              "duration": 1286000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I fill out the required feilds and continue on the general info page",
+            "result": {
+              "status": "passed",
+              "duration": 10147000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "The payment details page should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 185000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

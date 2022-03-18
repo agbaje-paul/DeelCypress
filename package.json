@@ -1,0 +1,37 @@
+{
+  "name": "deel_signup_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy.tests": "cypress run",
+    "cy:report": "node ./cypress/report.js",
+    "test:smoke": "cypress run --env grep=\"Smoke\"",
+    "test:regression": "cypress run --env grep=\"Regression\"",
+    "test:E2E": "cypress run --env grep=\"E2E\"",
+    "test:smoke:regression": "cypress run --env grep=\"Smoke; Regression\"",
+    "test:tag:sprint": "cypress run --env grepTags=\"Sprint\"",
+    "test:tag:sprintOrRegression": "cypress run --env grepTags=\"Sprint Regression \"",
+    "test:tag:sprintAndRegression": "cypress run --env grepTags=\"Sprint+Regression \"",
+    "test:tag:invertRegression": "cypress run --env grepTags=\"-Regression \" --spec \"cypress/integration/Group_TCS_2.js\""
+  },
+  "author": "Paul Agbaje",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^1.6.2",
+    "multiple-cucumber-html-reporter": "^1.19.0",
+    "prettier": "^2.6.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "cucumberJson": {
+      "generate": true
+    },
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress-grep": "^2.13.1"
+  }
+}
