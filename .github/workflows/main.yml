@@ -16,6 +16,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Cypress run
-      run: ls
-    - name: Cypress run bb
-      run: pwd
+      uses: cypress-io/github-action@v2
+      with:
+        build: npm run cy.tests
+    - name: Generate report
+      run:  npm run cy:report
+    - name: Upload report
+      uses: actions/upload-artifact@v2
+      with:
+          name: cypress-cucumber-report
+          path: ./cypress/cucumber-report/
